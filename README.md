@@ -1,2 +1,3 @@
-# nfs-simple
-NFS Server profile with several clients of different types
+# Dataset LAN Profile
+
+Simple LAN with shared access to vm_images dataset. 
