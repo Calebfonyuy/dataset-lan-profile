@@ -54,6 +54,7 @@ for c_type in resourceTypes:
     nfsClient.disk_image = params.osImage
     nfsClient.hardware_type = c_type
     nfsClient.routable_control_ip = True
+    c_iface = nfsClient.addInterface('interface-'+str(ip_count), pg.IPv4Address('192.168.6.'+str(ip_count),'255.255.255.0'))
     ifaces.append(c_iface)
     ip_count = ip_count + 1
 
