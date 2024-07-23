@@ -54,7 +54,7 @@ for c_type in resourceTypes:
     nfsClient.disk_image = params.osImage
     nfsClient.hardware_type = c_type
     nfsClient.routable_control_ip = True
-    c_iface = nfsClient.addInterface('interface-'+str(ip_count))
+    c_iface = nfsClient.addInterface()
     ifaces.append(c_iface)
     ip_count = ip_count + 1
 
